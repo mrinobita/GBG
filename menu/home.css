@@ -1,0 +1,73 @@
+*{margin: 0; padding:0;}
+body{
+    background-color: aqua;
+}
+.cover{
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100px;
+    position: relative;
+}
+.menu{
+    background:rgba(0, 0, 0, .1);
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 20px;
+}
+.menu ul li{
+    width: 50px;
+    margin: 2px;
+    padding: 7px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    transition: 0.1s;
+    margin-right:100px;
+    text-align: center;
+}
+.menu ul li a:hover{
+    color: rgb(5, 253, 5);
+    border-radius: 10px;
+}
+.menu ul li.active a{
+    color: white;
+    border-radius:5px;
+}
+.welcome h1{
+    color: blue;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+.welcome h2{
+    margin-top: 1px;
+    font-size: 15px;
+    margin-left: 27px;
+}
+.button p{
+    margin-top: 80px;
+    margin-left: 25px;
+    font-size: 32px;
+    font-family: Arial;
+    color: #fa0303;
+}
+.button ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 20px;
+}
+.button ul li{
+    width: 100px;
+}
+.button ul li a{
+    text-decoration: none;
+    font-size: 32px;
+    color:rgb(236, 228, 228);
+    transition: 0.1s;
+    text-align: center;
+}
