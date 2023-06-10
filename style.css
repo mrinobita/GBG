@@ -1,38 +1,47 @@
 *{margin: 0; padding:0;}
 body{
-    background-color: aqua;
+    background-color: gray;
 }
 .cover{
     background-image: url(img/cover.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    min-height: 100px;
+    min-height: px;
+    max-height: 100%;
     position: relative;
+    background-attachment: fixed;
 }
 .menu{
-    background:rgba(0, 0, 0, .1);
+    background:rgba(0, 0, 0, .2);
+    display: flex;
+    position: fixed;
+    padding-right: 100%;
 }
-.menu ul{
-    display: inline-flex;
-    list-style: none;
+.menu img{
+    width: 25px;
+    margin-top: 4px;
     margin-left: 20px;
+ }
+.menu ul{
+    display:flex;
+    list-style: none;
+    margin-left: 10px;
 }
 .menu ul li{
-    width: 80px;
-    margin: 4px;
-    padding: 8px;
+    width: 65px;
+    margin: .5px;
+    padding: 5px;
 }
 .menu ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color:black;
     transition: 0.1s;
-    margin-right:100px;
-    text-align: center;
 }
 .menu ul li a:hover{
-    color: rgb(5, 253, 5);
+    color: #fa0303;
     border-radius: 10px;
 }
 .menu ul li.active a{
@@ -41,29 +50,31 @@ body{
 }
 .logo{
     display: inline-flex;
+    margin-top: 100px;
 }
 .logo img{
-    width: 50px;
-    margin-top: 15px;
+    width: 40px;
+    margin-bottom:5px;
+    margin-top: 5px;
     margin-left: 15px;
-    margin-bottom: 10px;
 }
 .logo p{
-    margin-top:22px;
+    margin-top:12px;
     margin-left: 2px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .welcome h1{
-    color: blue;
-    margin-left: 25px;
-    margin-top: 50px;
+    margin-top: 5px;
+    margin-left: 18px;
+    color: rgb(95, 253, 4);
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .button p{
-    margin-top: 80px;
-    margin-left: 25px;
-    font-size: 32px;
-    font-family: Arial;
-    color: #fa0303;
+    margin-top: 250px;
+    margin-left: 20px;
+    font-size: 50px;
+    color: #06eeff;
 }
 .button ul{
     display: inline-flex;
@@ -71,12 +82,33 @@ body{
     margin-left: 20px;
 }
 .button ul li{
-    width: 180px;
+    margin-top: 25px;
 }
-.button ul li a{
+.button ul li a button{
+    border: none;
     text-decoration: none;
-    font-size: 50px;
-    color:rgb(236, 228, 228);
+    width: 200px;
+    font-size: 32px;
+    color:white;
     transition: 0.1s;
-    background-color: blue;
+    background-color: red;
+    padding: 5px .9px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.button ul li a button:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+    transition: 0.1s;
+    background-color:rgb(172, 6, 6);
+    border-radius: 22px;
+}
+.mri a{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
 }
